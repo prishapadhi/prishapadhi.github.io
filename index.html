@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Prisha Padhi | Portfolio</title>
+    <title>Prisha Padhi | Rutgers Business School</title>
 
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         html {
@@ -19,188 +19,294 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #fffafc;
-            color: #2f2933;
+            color: #121827;
+            background: white;
             line-height: 1.6;
         }
 
         nav {
-            background-color: #ffffff;
+            height: 85px;
+            padding: 0 10%;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 20px 9%;
+            justify-content: space-between;
+            background: white;
+            border-bottom: 1px solid #e6e8ec;
             position: sticky;
             top: 0;
-            box-shadow: 0 2px 12px rgba(82, 45, 66, 0.08);
+            z-index: 10;
         }
 
-        nav h2 {
-            color: #7b3f61;
-        }
-
-        nav a {
-            color: #4e3b46;
-            text-decoration: none;
-            margin-left: 22px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #b05c87;
-        }
-
-        header {
-            min-height: 75vh;
+        .logo-area {
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 80px 20px;
-            background: linear-gradient(135deg, #fce7f0, #f8f1f5);
+            gap: 14px;
         }
 
-        .intro {
-            max-width: 850px;
+        .rbs-logo {
+            color: #cc0033;
+            font-size: 1.5rem;
+            font-weight: 800;
+            padding-right: 14px;
+            border-right: 1px solid #b7bbc2;
         }
 
-        .intro p:first-child {
-            color: #9c5177;
-            font-weight: bold;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+        .portfolio-name {
+            font-size: 1.1rem;
+            font-weight: 700;
         }
 
-        h1 {
-            font-size: 3.7rem;
-            color: #542f45;
-            margin: 12px 0;
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
         }
 
-        .statement {
-            font-size: 1.3rem;
-            margin: 20px auto 30px;
-            max-width: 750px;
-        }
-
-        .button {
-            display: inline-block;
-            background-color: #7b3f61;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 30px;
+        .nav-links a {
+            color: #121827;
             text-decoration: none;
-            margin: 6px;
-            transition: 0.3s;
+            font-weight: 600;
+            font-size: 0.9rem;
         }
 
-        .button:hover {
-            background-color: #a4547d;
-            transform: translateY(-2px);
+        .nav-links a:hover {
+            color: #cc0033;
+        }
+
+        .nav-button {
+            background: #121827;
+            color: white !important;
+            padding: 11px 22px;
+            border-radius: 25px;
+        }
+
+        .hero {
+            min-height: 570px;
+            background: #f5f7f9;
+            padding: 80px 11%;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            align-items: center;
+            gap: 75px;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .headshot {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #dfe3e8;
+            border: 7px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .profile h2 {
+            margin-top: 20px;
+            font-size: 1.6rem;
+        }
+
+        .profile-school {
+            color: #cc0033;
+            font-weight: 700;
+        }
+
+        .profile-class {
+            color: #6c7280;
+        }
+
+        .label {
+            display: inline-block;
+            background: #f8dfe3;
+            color: #9d1736;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 5px 13px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.1rem;
+            line-height: 1.08;
+            max-width: 760px;
+            letter-spacing: -1.5px;
+        }
+
+        .personal-statement {
+            color: #59606d;
+            font-size: 1.15rem;
+            max-width: 760px;
+            margin: 22px 0 28px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .primary-button {
+            display: inline-block;
+            background: white;
+            color: #121827;
+            border: 1px solid #d9dce1;
+            padding: 11px 22px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .text-link {
+            color: #121827;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 11px;
+        }
+
+        .primary-button:hover,
+        .text-link:hover {
+            color: #cc0033;
         }
 
         section {
-            padding: 75px 9%;
+            padding: 75px 11%;
         }
 
-        section h2 {
-            text-align: center;
-            color: #64364f;
-            font-size: 2.2rem;
+        .section-heading {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .section-description {
+            color: #68707d;
             margin-bottom: 35px;
+            max-width: 720px;
         }
 
         .skills-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            max-width: 900px;
-            margin: auto;
+            gap: 14px;
         }
 
         .skill {
-            background-color: white;
-            color: #64364f;
-            padding: 13px 22px;
-            border: 1px solid #e7c6d6;
-            border-radius: 25px;
-            box-shadow: 0 4px 10px rgba(82, 45, 66, 0.07);
-            font-weight: bold;
+            background: #f5f7f9;
+            border: 1px solid #e1e4e8;
+            padding: 12px 19px;
+            border-radius: 9px;
+            font-weight: 600;
         }
 
         #projects {
-            background-color: #f8eff3;
+            background: #f5f7f9;
         }
 
         .project-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px;
-            max-width: 1100px;
-            margin: auto;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
         }
 
         .project-card {
-            background-color: white;
-            border-radius: 16px;
+            background: white;
+            border: 1px solid #e1e4e8;
+            border-radius: 14px;
             padding: 28px;
-            box-shadow: 0 5px 18px rgba(82, 45, 66, 0.09);
-            border-top: 5px solid #b8648d;
-            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(18, 24, 39, 0.06);
+            transition: 0.25s;
         }
 
         .project-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(18, 24, 39, 0.1);
+        }
+
+        .project-number {
+            color: #cc0033;
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .project-card h3 {
-            color: #64364f;
-            margin-bottom: 12px;
+            margin: 12px 0;
+            font-size: 1.25rem;
         }
 
         .project-card p {
-            margin-bottom: 18px;
+            color: #626a77;
+            font-size: 0.95rem;
+        }
+
+        .tags {
+            margin-top: 20px;
         }
 
         .tag {
             display: inline-block;
-            background-color: #f7dce8;
-            color: #743c59;
-            border-radius: 15px;
-            padding: 5px 10px;
+            background: #f8dfe3;
+            color: #941a37;
+            padding: 4px 9px;
             margin: 3px;
-            font-size: 0.8rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 700;
         }
 
         #contact {
             text-align: center;
-            background-color: white;
+        }
+
+        #contact p {
+            color: #626a77;
+            margin: 10px auto 23px;
+            max-width: 620px;
         }
 
         footer {
-            background-color: #542f45;
-            color: white;
+            background: #121827;
+            color: #d6dae2;
             text-align: center;
-            padding: 22px;
+            padding: 25px;
+            font-size: 0.9rem;
         }
 
-        @media (max-width: 650px) {
+        @media (max-width: 850px) {
             nav {
-                flex-direction: column;
-                gap: 10px;
+                padding: 0 5%;
             }
 
-            nav a {
-                margin: 0 8px;
+            .nav-links a:not(.nav-button) {
+                display: none;
             }
 
-            h1 {
-                font-size: 2.6rem;
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 35px;
+                padding: 55px 7%;
             }
 
-            .statement {
-                font-size: 1.1rem;
+            .hero-content h1 {
+                font-size: 2.4rem;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 60px 7%;
             }
         }
     </style>
@@ -209,132 +315,179 @@
 <body>
 
     <nav>
-        <h2>Prisha Padhi</h2>
+        <div class="logo-area">
+            <span class="rbs-logo">RBS</span>
+            <span class="portfolio-name">Prisha's Portfolio</span>
+        </div>
 
-        <div>
-            <a href="#home">Home</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a class="nav-button" href="#contact">Connect With Me</a>
         </div>
     </nav>
 
-    <header id="home">
-        <div class="intro">
-            <p>Finance & Business Analytics</p>
+    <main>
+        <section class="hero" id="about">
 
-            <h1>Hi, I'm Prisha!</h1>
+            <div class="profile">
+                <!-- Upload a picture named headshot.jpg to display it here -->
+                <img
+                    class="headshot"
+                    src="headshot.jpg"
+                    alt="Professional headshot of Prisha Padhi"
+                >
 
-            <!-- PERSONAL STATEMENT: one clear professional sentence -->
-            <p class="statement">
-                I am a Rutgers Business School student pursuing Finance and
-                Business Analytics and Information Technology, with an interest
-                in using data, communication, and strategic thinking to solve
-                real-world business challenges.
+                <h2>Prisha Padhi</h2>
+                <p class="profile-school">Rutgers Business School</p>
+                <p class="profile-class">Class of 2029</p>
+            </div>
+
+            <div class="hero-content">
+                <span class="label">Finance + Business Analytics</span>
+
+                <h1>
+                    Turning data, strategy, and communication into meaningful
+                    business solutions.
+                </h1>
+
+                <!-- The required one-sentence personal statement -->
+                <p class="personal-statement">
+                    I am a Rutgers Business School student pursuing Finance and
+                    Business Analytics and Information Technology, with an
+                    interest in using data, communication, and strategic thinking
+                    to solve real-world business challenges.
+                </p>
+
+                <div class="hero-buttons">
+                    <a class="primary-button" href="#projects">
+                        View My Projects
+                    </a>
+
+                    <a
+                        class="text-link"
+                        href="https://www.linkedin.com/in/prisha-padhi"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn Profile →
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="skills">
+            <h2 class="section-heading">Skills</h2>
+
+            <p class="section-description">
+                A combination of analytical, technical, and communication
+                skills developed through my coursework and professional experiences.
             </p>
 
-            <a class="button" href="#projects">View My Projects</a>
+            <div class="skills-container">
+                <div class="skill">Microsoft Excel</div>
+                <div class="skill">Data Analysis</div>
+                <div class="skill">Financial Analysis</div>
+                <div class="skill">Market Research</div>
+                <div class="skill">Business Strategy</div>
+                <div class="skill">Microsoft PowerPoint</div>
+                <div class="skill">Client Outreach</div>
+                <div class="skill">Digital Marketing</div>
+                <div class="skill">Written Communication</div>
+                <div class="skill">Team Collaboration</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-heading">Featured Projects</h2>
+
+            <p class="section-description">
+                These projects highlight my experience in financial research,
+                marketing, communication, and community engagement.
+            </p>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <span class="project-number">Project 01</span>
+
+                    <h3>Global Markets Job Simulation</h3>
+
+                    <p>
+                        Completed a Bank of America Global Markets simulation by
+                        researching market trends, evaluating client priorities,
+                        and developing investment recommendations focused on
+                        diversification, sustainability, and risk management.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">Finance</span>
+                        <span class="tag">Market Research</span>
+                        <span class="tag">Strategy</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-number">Project 02</span>
+
+                    <h3>Local Business Outreach Campaign</h3>
+
+                    <p>
+                        Supported marketing and business development for a State
+                        Farm office by building relationships with more than 30
+                        local businesses and identifying opportunities to promote
+                        insurance services throughout the community.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">Marketing</span>
+                        <span class="tag">Outreach</span>
+                        <span class="tag">Communication</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-number">Project 03</span>
+
+                    <h3>Climate Education Initiative</h3>
+
+                    <p>
+                        Designed and delivered climate-change lessons and
+                        interactive projects for younger students through the
+                        Planet Youth Project, making complex environmental topics
+                        clear, engaging, and age appropriate.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">Education</span>
+                        <span class="tag">Project Design</span>
+                        <span class="tag">Public Speaking</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-heading">Let's Connect</h2>
+
+            <p>
+                I am always interested in opportunities to learn, collaborate,
+                and connect with other students and business professionals.
+            </p>
 
             <a
-                class="button"
+                class="primary-button"
                 href="https://www.linkedin.com/in/prisha-padhi"
                 target="_blank"
                 rel="noopener noreferrer"
             >
                 Visit My LinkedIn
             </a>
-        </div>
-    </header>
-
-    <section id="skills">
-        <h2>My Skills</h2>
-
-        <div class="skills-container">
-            <div class="skill">Microsoft Excel</div>
-            <div class="skill">Data Analysis</div>
-            <div class="skill">Financial Analysis</div>
-            <div class="skill">Market Research</div>
-            <div class="skill">Business Strategy</div>
-            <div class="skill">Microsoft PowerPoint</div>
-            <div class="skill">Client Outreach</div>
-            <div class="skill">Digital Marketing</div>
-            <div class="skill">Written Communication</div>
-            <div class="skill">Team Collaboration</div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Featured Projects</h2>
-
-        <div class="project-grid">
-
-            <div class="project-card">
-                <h3>Global Markets Job Simulation</h3>
-
-                <p>
-                    Completed a Bank of America Global Markets simulation in
-                    which I researched market trends, evaluated client priorities,
-                    and developed investment recommendations focused on
-                    diversification, sustainability, and risk management.
-                </p>
-
-                <span class="tag">Market Research</span>
-                <span class="tag">Finance</span>
-                <span class="tag">Strategy</span>
-            </div>
-
-            <div class="project-card">
-                <h3>Local Business Outreach Campaign</h3>
-
-                <p>
-                    Supported marketing and business development efforts for a
-                    State Farm office by building relationships with more than
-                    30 local businesses and identifying opportunities to promote
-                    insurance services throughout the community.
-                </p>
-
-                <span class="tag">Marketing</span>
-                <span class="tag">Outreach</span>
-                <span class="tag">Communication</span>
-            </div>
-
-            <div class="project-card">
-                <h3>Climate Education Initiative</h3>
-
-                <p>
-                    Designed and delivered engaging climate-change lessons and
-                    interactive projects for younger students through the Planet
-                    Youth Project, making complex environmental topics easier to
-                    understand and apply.
-                </p>
-
-                <span class="tag">Education</span>
-                <span class="tag">Project Design</span>
-                <span class="tag">Public Speaking</span>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Let's Connect</h2>
-
-        <p>
-            I am always interested in opportunities to learn, collaborate,
-            and connect with other students and professionals.
-        </p>
-
-        <br>
-
-        <a
-            class="button"
-            href="https://www.linkedin.com/in/prisha-padhi"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Connect on LinkedIn
-        </a>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <p>© 2026 Prisha Padhi | Rutgers Business School</p>
